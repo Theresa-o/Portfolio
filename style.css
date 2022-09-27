@@ -1,0 +1,88 @@
+body{
+    /* font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto Mono', monospace; */
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+
+.intro{
+    height: 100vh;
+}
+
+.intro-nav{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* ------------------------------------ANIMATE----------------------------- */
+.socials{
+    display: flex;
+}
+
+.social{
+    padding: 0 10px;
+}
+/* ------------------------------------ANIMATE----------------------------- */
+.round-toggle{
+    padding: 15px 30px;
+}
+
+.intro-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.intro-title{
+    font-size: 56px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+    margin-left: 140px;
+    color: #0A192F;
+}
+
+.title-name, .title-job{
+    margin: 0;
+    
+}
+
+.first-name{
+    color: #01baae;
+}
+
+.btn-group{
+    background-color: #fff;
+    border: 2px solid #01baae;
+    color: #01baae;
+    padding: 15px 20px;
+    cursor: pointer;
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.btn-groups:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ------------------------------------ANIMATE----------------------------- */
+.btn-group:hover {
+    background-color: #01baae;
+    color: fff;
+}
+/* ------------------------------------ANIMATE----------------------------- */
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+@media only screen and (max-width: 1000px){
+.intro{
+    background-color: blue;
+ }
+}
+/* ----------------------------------RESPONSIVE------------------------------ */
