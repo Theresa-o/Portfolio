@@ -75,14 +75,131 @@ ul{
 /* ------------------------------------ANIMATE----------------------------- */
 .btn-group:hover {
     background-color: #01baae;
-    color: fff;
+    color: #fff;
 }
 /* ------------------------------------ANIMATE----------------------------- */
 
 /* ----------------------------------RESPONSIVE------------------------------ */
-@media only screen and (max-width: 1000px){
-.intro{
-    background-color: blue;
- }
+@media only screen and (max-width: 980px){
+.intro-title {
+    margin-bottom: 70px;
+    margin-left: 90px;
+}
+
+.title-name{
+    font-size: 40px;
+}
+
+.title-job {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.btn-group {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin-top: -40;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.intro-title {
+    margin-right: 30px;
+    margin-left: 50px;
+}
 }
 /* ----------------------------------RESPONSIVE------------------------------ */
+
+/* -------------------------------------------SKILLS--------------------------------------- */
+
+.skills{
+    background-color: #01baae;
+    clip-path: polygon(0 100%, 450% 100%, 0 0);
+    padding: 3.5rem;
+}
+
+.header{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    font-size: 2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 0.2rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 20px;
+}
+
+.skills-box{
+    padding: 0.2rem;
+    color: #ddd;
+}
+
+.skills-meta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5;
+}
+
+.skills-img{
+    width: 50%;
+}
+
+.img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-meta h3{
+    color: #fff;
+    margin: 0.5rem;
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+
+@media only screen and (max-width: 500px) {
+    .container {
+            font-size: 0.9rem;
+            padding: 0.2rem 20px;
+        }
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+
+/* -------------------------------------------SKILLS--------------------------------------- */
+
+/* --------------------------------------------PROJECTS---------------------------------------- */
+.video-box{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-box iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-projects{
+    color: #0A192F;
+}
