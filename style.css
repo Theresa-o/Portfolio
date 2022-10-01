@@ -134,6 +134,12 @@ ul{
     grid-gap: 0.2rem;
     font-size: 1.2rem;
     padding: 0.2rem 20px;
+
+    /* in case you want to make it one line, adjust .container with the code below (remove the grid
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+    */
 }
 
 .skills-box{
@@ -183,7 +189,7 @@ ul{
 /* -------------------------------------------SKILLS--------------------------------------- */
 
 /* --------------------------------------------PROJECTS---------------------------------------- */
-.video-box{
+/* .video-box{
     position: relative;
     padding-bottom: 56.25%;
     padding-top: 25px;
@@ -198,8 +204,68 @@ ul{
     top: 0;
     height: 100%;
     width: 100%;
-}
+} */
 
 .header-projects{
     color: #0A192F;
+}
+
+.projects-meta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+
+}
+
+.project-container{
+    /* position: relative; */
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* position: relative; */
+    /* width: 2200px;
+    max-width: 2050px; */
+    margin: 20px 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.video-box{
+    max-width: 950px;
+    flex: 0 0 650px;
+}
+
+.video-box iframe{
+    max-width: 100%;
+}
+
+.text-box{
+    margin-right: 40px;
+}
+
+.project-name{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.project-stack span{
+    border: 2px solid #01baae;
+    background-color: #1d222b;
+    color: #fff;
+    padding: 5px;
+}
+
+.collaborators span{
+    font-weight: bold;
+}
+
+.project-link{
+    padding: 5px 10px;
+    text-decoration: none;
 }
