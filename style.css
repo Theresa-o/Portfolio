@@ -189,22 +189,7 @@ ul{
 /* -------------------------------------------SKILLS--------------------------------------- */
 
 /* --------------------------------------------PROJECTS---------------------------------------- */
-/* .video-box{
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 25px;
-    height: 0;
-}
 
-.video-box iframe {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-} */
 
 .header-projects{
     color: #0A192F;
@@ -219,8 +204,7 @@ ul{
 }
 
 .project-container{
-    /* position: relative; */
-    width: 1000px;
+    width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -228,9 +212,6 @@ ul{
 }
 
 .card{
-    /* position: relative; */
-    /* width: 2200px;
-    max-width: 2050px; */
     margin: 20px 10px;
     padding: 10px;
     display: flex;
@@ -255,10 +236,12 @@ ul{
 }
 
 .project-stack span{
+    display: inline-block;
     border: 2px solid #01baae;
     background-color: #1d222b;
     color: #fff;
     padding: 5px;
+    margin-top: 3px;
 }
 
 .collaborators span{
@@ -269,3 +252,57 @@ ul{
     padding: 5px 10px;
     text-decoration: none;
 }
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+@media only screen and (max-width: 980px) {
+    .project-link{
+        margin: 1px 0;
+    }
+
+    .video-box {
+        max-width: 750px;
+        flex: 0 0 450px;
+    }
+
+    .video-box iframe {
+        max-width: 80%;
+    }
+
+    .text-box {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .project-container {
+        flex-direction: column;
+        width: 800px;
+        }
+
+    .card{
+        flex-direction: column;
+        max-width: 570px;
+        margin-bottom: -175px;
+    }
+
+    .special{
+        margin-bottom: 2px;
+    }
+
+    .project-links{
+        padding-bottom: 20px;
+    }
+
+    .video-box{
+        max-width: 100%;
+        margin-left: 28px;
+    }
+
+    .text-box {
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
