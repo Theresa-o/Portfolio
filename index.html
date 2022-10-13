@@ -134,7 +134,7 @@
         </div>
     </section>
     <section class="projects">
-        <h2 class="header header-projects">PROJECTS</h2>
+        <h2 class="header header-blue">PROJECTS</h2>
         <div class="projects-meta">
             <div class="project-container">
                 <div class="card">
@@ -202,7 +202,41 @@
             </div>
         </div>
     </section>
-    <section></section>
+    <section class="about">
+        <h2 class="header">ABOUT ME</h2>
+        <div class="text-meta">
+            <div class="text-container">
+                <p>Analyst turned Software Developer, thinking in 0s and 1</p>
+                <p>During the COVID-19 pandemic lockdown, I and 17 key-man persons were chosen to represent our departments to work from the office, I was sent a list of resources by my colleague and in that link was a special course 'Introduction to Computer Science, CS50'. </p>
+                <p>I took a leap and learnt web development offered by Harvard University through EDX. I quickly absorbed new concepts, while bringing ambitious ideas and a positive attitude to every challenge.</p>
+                <p>I am enthusiastic about learning various aspects and my track record of being recognized at my previous job within two years - Customer Experience Partner, Acting Line Manager and Business Continuity Manager - shows that I love to learn, I am a team player and I am eager to set excellence as my starting bar.</p>
+                <p>When I'm not coding, I am either perfecting my swimming skills, expressing myself through music (I dance and sing - although, I'm a better dancer than singer but I try in all aspects.).</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="header header-blue">CONTACT ME</h2>
+        <form action="https://formsubmit.co/okorotheresa19@gmail.com" method="POST" onsubmit="event.preventDefault(); validateForm()">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <small class="error"></small>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Your email" required>
+            <small class="error"></small>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" id="message" placeholder="Your message" rows="6"></textarea>
+            <!-- <input type="text" name="message" placeholder="message" required> -->
+            <small class="error"></small>
+            
+            <div class="center">
+                <button type="submit">Message</button>
+                <p id="success"></p>
+            </div>
+        </form>
+    </section>
     <footer></footer>
+    <script src="script.js"></script>
 </body>
 </html>

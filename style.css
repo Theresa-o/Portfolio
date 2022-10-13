@@ -191,7 +191,7 @@ ul{
 /* --------------------------------------------PROJECTS---------------------------------------- */
 
 
-.header-projects{
+.header-blue{
     color: #0A192F;
 }
 
@@ -306,3 +306,131 @@ ul{
 }
 
 /* ----------------------------------RESPONSIVE------------------------------ */
+
+/* -----------------------------------ABOUT ME----------------------------------- */
+
+.about {
+    background-color: #01baae;
+    clip-path: polygon(0 15vh, 100% 0, 100% 80%, 0 100%);
+    padding: 3.5rem;
+}
+
+.text-meta{
+    margin: 0 auto;
+    color: #fff;
+    width: 750px;
+}
+
+.text-container{
+    margin-bottom: 5rem;
+}
+
+.text-meta p{
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+@media only screen and (max-width: 880px) {
+
+    .about {
+        clip-path: none;
+    }
+
+    .text-meta {
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .about {
+        clip-path: none;
+    }
+
+    .text-meta {
+        width: 350px;
+    }
+
+    /* .text-container {
+        margin-bottom: 8rem;
+    } */
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+
+/* ----------------------------------------CONTACT ME ---------------------------- */
+
+form{
+    max-width: 700px;
+    width: 90%;
+    margin: 2vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-bottom: 2px solid #01baae;
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #01baae;
+}
+
+.center{
+    text-align: center;
+}
+
+button[type="submit"]{
+    margin-top: 30px;
+    width: 90%;
+    max-width: 200px;
+    background-color: #fff;
+    border: 2px solid #01baae;
+    color: #01baae;
+    cursor: pointer;
+    padding: 10px 4px;
+    font-size: 1.3rem;
+}
+
+button[type="submit"]:hover {
+    background-color: #01baae;
+    color: #fff;
+}
+
+.error{
+    color: red;
+}
+
+.error-border {
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: #28A745;
+}
+
+
+/* ----------------------------------------CONTACT ME ---------------------------- */
