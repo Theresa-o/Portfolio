@@ -112,7 +112,7 @@ ul{
 
 /* -------------------------------------------SKILLS--------------------------------------- */
 
-.skills{
+#skills{
     background-color: #01baae;
     clip-path: polygon(0 100%, 450% 100%, 0 0);
     padding: 3.5rem;
