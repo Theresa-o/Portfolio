@@ -107,6 +107,19 @@ ul{
     margin-right: 30px;
     margin-left: 50px;
 }
+
+.btn-group {
+    padding: 7px 12px;
+    float: left;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-groups:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 }
 /* ----------------------------------RESPONSIVE------------------------------ */
 
