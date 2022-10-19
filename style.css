@@ -109,8 +109,7 @@ ul{
 }
 
 .btn-group {
-    padding: 18px 22px;
-    float: left;
+    padding: 12px 12px;
     font-size: 1rem;
 }
 
@@ -369,10 +368,9 @@ ul{
 
 @media only screen and (max-width: 500px) {
     .text-meta {
-            width: 250px;
+            width: 650px;
         }
     }
-}
 
 /* ----------------------------------RESPONSIVE------------------------------ */
 
@@ -449,3 +447,14 @@ button[type="submit"]:hover {
 
 
 /* ----------------------------------------CONTACT ME ---------------------------- */
+
+/* ----------------------------------RESPONSIVE------------------------------ */
+
+
+@media only screen and (max-width: 500px) {
+    form {
+            max-width: 500px;
+        }
+}
+
+/* ----------------------------------RESPONSIVE------------------------------ */
