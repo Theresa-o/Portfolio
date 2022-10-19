@@ -109,10 +109,9 @@ ul{
 }
 
 .btn-group {
-    padding: 7px 12px;
+    padding: 18px 22px;
     float: left;
     font-size: 1rem;
-    font-weight: 600;
 }
 
 .btn-groups:after {
@@ -366,10 +365,13 @@ ul{
     .text-meta {
         width: 350px;
     }
+}
 
-    /* .text-container {
-        margin-bottom: 8rem;
-    } */
+@media only screen and (max-width: 500px) {
+    .text-meta {
+            width: 250px;
+        }
+    }
 }
 
 /* ----------------------------------RESPONSIVE------------------------------ */
