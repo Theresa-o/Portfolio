@@ -322,7 +322,7 @@ ul{
 
 @media only screen and (max-width: 500px) {
     .project-container {
-        width: 00px;
+        width: 500px;
     }
 }
 
@@ -378,9 +378,14 @@ ul{
 
 @media only screen and (max-width: 500px) {
     .text-meta {
-            width: 650px;
+            width: 450px;
         }
+
+    .text-meta p {
+        font-size: 0.5rem;
+        line-height: 0.5;
     }
+}
 
 /* ----------------------------------RESPONSIVE------------------------------ */
 
