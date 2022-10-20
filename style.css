@@ -197,6 +197,9 @@ ul{
             font-size: 0.9rem;
             padding: 0.2rem 20px;
         }
+    .img {
+        width: 70px;
+    }
 }
 
 /* ----------------------------------RESPONSIVE------------------------------ */
@@ -318,6 +321,12 @@ ul{
         font-size: 1rem;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .project-container {
+        width: 600px;
+    }
 }
 
 /* ----------------------------------RESPONSIVE------------------------------ */
