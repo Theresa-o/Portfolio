@@ -357,7 +357,7 @@ ul{
 }
 
 /* ----------------------------------RESPONSIVE------------------------------ */
-@media only screen and (max-width: 880px) {
+/* @media only screen and (max-width: 880px) {
 
     .about {
         clip-path: none;
@@ -383,7 +383,7 @@ ul{
     .text-meta {
             width: 650px;
         }
-    }
+    } */
 
 /* ----------------------------------RESPONSIVE------------------------------ */
 
