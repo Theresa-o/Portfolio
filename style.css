@@ -385,6 +385,7 @@ ul{
         font-size: 0.5rem;
         display: flex;
         justify-content: flex-start;
+        overflow-x: hidden;
     }
 }
 
