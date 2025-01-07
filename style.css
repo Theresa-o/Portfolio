@@ -1,8 +1,14 @@
 body {
-  /* font-family: 'Montserrat', sans-serif;
-        font-family: 'Roboto Mono', monospace; */
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.projects-meta,
+.card,
+.text-box,
+.image-box {
+  max-width: 100%;
 }
 
 ul {
@@ -94,44 +100,36 @@ ul {
     height: auto !important;
   }
 
-  /* .intro-nav {
-    display: flex;
-    justify-content: space-between;
-  } */
-
-  .intro-title {
-    display: flex;
-    justify-content: center;
-  }
-
   .intro-area {
     height: 50%;
+    margin: 0 15px;
+    align-items: center;
+    justify-content: center;
   }
 
   .title-job {
     font-size: 16px !important;
+    margin-bottom: 50px;
   }
 
   .title-name {
     font-size: 18px !important;
   }
 
-  .btn-groups:after {
-    content: "";
-    clear: both;
-    display: table;
+  .btn-groups-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .btn-pr {
-    margin-top: 15px;
-  }
-
-  .btn-group {
-    border: 1px solid #01baae;
-    padding: 5px 5px;
-
-    font-size: 1rem;
-    font-weight: 400;
+  .btn-section {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    width: 150px;
   }
 }
 @media only screen and (max-width: 980px) {
@@ -149,10 +147,21 @@ ul {
     font-size: 26px;
   }
 
-  .btn-group {
-    padding: 10px 15px;
+  .btn-groups-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .btn-section {
+    padding: 0 20px;
+    cursor: pointer;
     font-size: 1rem;
-    margin-top: -40;
+    font-weight: 600;
+    text-decoration: none; /* Since we're using <a> tags */
+    /* min-width: 120px;  */
+    text-align: center;
   }
 }
 
@@ -312,6 +321,7 @@ ul {
   margin: 20px 10px;
   padding: 10px;
   display: flex;
+  max-width: 100%;
 }
 
 .image-box {
@@ -401,7 +411,10 @@ ul {
   }
 
   .image-box img {
-    margin-left: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 
@@ -427,7 +440,8 @@ ul {
 @media only screen and (max-width: 810px) {
   .project-container {
     flex-direction: column;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
   }
 
   .card {
@@ -446,10 +460,11 @@ ul {
   }
 
   .image-box {
-    width: 100%;
-    /* max-width: 400px; */
-    max-width: 100%;
-    /* flex: 0 0 auto; */
+    .image-box {
+      width: 100%;
+      max-width: 100%;
+      padding: 0 15px;
+    }
   }
 
   .image-box img {
@@ -473,7 +488,11 @@ ul {
 
 @media only screen and (max-width: 500px) {
   .project-container {
-    width: 500px;
+    width: 100%;
+  }
+
+  .project-stack {
+    width: 100%;
   }
 
   .project-links {
@@ -560,7 +579,70 @@ ul {
 
 /* ----------------------------------RESPONSIVE------------------------------ */
 
+/* PUBLICATION */
+
+.publication {
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.pub-section {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-card {
+  flex: 0 0 50%;
+  max-width: 500px;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.post-container {
+  text-decoration: none;
+}
+
+.post-title {
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #0a192f;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 768px) {
+  .pub-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .post-title {
+    font-size: 1rem;
+  }
+}
+
 /* ----------------------------------------CONTACT ME ---------------------------- */
+
+.contact {
+  background-color: #01baae;
+  clip-path: polygon(0 100%, 450% 100%, 0 0);
+  padding: 3.5rem;
+}
 
 form {
   max-width: 700px;
@@ -574,6 +656,7 @@ form {
 label {
   display: block;
   margin: 20px 0;
+  color: #fff;
 }
 
 input,
@@ -620,6 +703,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #01baae;
   color: #fff;
+  border-color: #fff;
 }
 
 .error {
